@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FbVideosDownloader</string>
+    <string name="txt_made_by_ali_hussnain">Developed By Ali Hussnain</string>
+    <string name="txt_fb_video_downloader">Facebook Video Downloader</string>
+    <string name="txt_enter_url">Paste FB Video Link</string>
+    <string name="txt_download">Download</string>
+    <string name="txt_detail">Copy Your FB Video Link and paste it here</string>
+    <string name="txt_invalid">URL is invalid</string>
+    <string name="txt_host_txt_one">facebook.com</string>
+    <string name="txt_host_txt_two">fb.watch</string>
+    <string name="txt_extension">.mp4</string>
+    <string name="txt_facebook">facebook</string>
+    <string name="txt_content">content</string>
+    <string name="txt_download_start">Download Started</string>
+
+</resources>

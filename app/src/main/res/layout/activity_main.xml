@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgIllustration"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_margin="@dimen/_10dp"
+        android:src="@drawable/undraw_download_re_li50"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgIllustration"
+        android:layout_margin="@dimen/_10dp"
+        android:text="@string/txt_detail"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEnterURL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_20dp"
+        android:layout_marginVertical="@dimen/_20dp"
+        app:cardCornerRadius="@dimen/_5dp"
+        app:cardElevation="@dimen/_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edtFbUrl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@null"
+            android:hint="@string/txt_enter_url"
+            android:paddingStart="@dimen/_20dp"
+            tools:ignore="Autofill,MissingConstraints,RtlSymmetry,TextFields" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvEnterURL"
+        android:layout_marginHorizontal="@dimen/_20dp"
+        android:layout_marginVertical="@dimen/_20dp"
+        android:background="@drawable/recieve_msg_bg"
+        android:text="@string/txt_download"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sp" />
+
+</RelativeLayout>
